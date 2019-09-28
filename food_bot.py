@@ -54,7 +54,7 @@ async def on_ready():
             print("Running on {}/{}".format(guild.name, channel.name))
 
 
-dchar = "$"
+dchar = "|"
 @bot.command(name="nominate", help="<name> {} <address> {} <website> (website is optional)".format(dchar, dchar))
 async def nominate(ctx, *args):
     if (ctx.message.guild.name, ctx.message.channel.name) != (dinner_organization_guild, dinner_organization_channel):
