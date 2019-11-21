@@ -37,9 +37,9 @@ class Restaurant:
         return hash(self.name, self.address, self.website)
 
     def __str__(self):
-        ret = "{} / {}".format(self.name, self.address)
+        ret = "{} | {}".format(self.name, self.address)
         if self.website:
-            ret += " / <{}>".format(self.website)
+            ret += " | <{}>".format(self.website)
         return ret
 
 
